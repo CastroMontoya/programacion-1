@@ -1,0 +1,36 @@
+// serie del 2do p.cpp : Defines the entry point for the console application.
+// autor: carlos castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+void main ()
+{
+int N,u,udm,c,d,b,resultado;
+
+
+cout<<"ingrese su numero ";
+cin>>N;
+cout<<"ingrese su base ";
+cin>>b;
+   
+udm=N/1000;
+c=(N-1000*udm)/100;
+d=(N-1000*udm-100*c)/10;
+u=(N-1000*udm-100*c)%10;
+
+resultado=udm*powf(b,3)+c*powf(b,2)+d*powf(b,1)+u*powf(b,0);
+cout<<"resultado es "<<resultado;
+
+ 
+getch();
+getch();
+
+
+}
+
