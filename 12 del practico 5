@@ -1,0 +1,70 @@
+// 12 del practico 5.cpp : Defines the entry point for the console application.
+//Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	float f,p1,p2,np,ef,nf,x;
+	
+	do{
+		
+		cout<<"ingrese su primer parcial\n";
+		cin>>p1;
+		while(p1<0||p1>100)
+		{
+			cout<<"error escriba correctamente\n";
+			cout<<"su primer pacial es\n";
+			cin>>p1;
+			getchar();
+		}
+	
+		cout<<"ingrese su segundo parcial\n";
+		cin>>p2;
+			while(p2<0||p2>100)
+		{
+			cout<<"error escriba correctamente\n";
+			cout<<"su segundo pacial es\n";
+			cin>>p2;
+			getchar();
+		}
+		cout<<"ingrese su nota practica\n";
+		cin>>np;
+			while(np<0||np>100)
+		{
+			cout<<"error escriba correctamente\n";
+			cout<<"su nota practica es\n";
+			cin>>np;
+			getchar();
+		}
+		cout<<"ingrese su examen final\n";
+		cin>>ef;
+			while(ef<0||ef>100)
+		{
+			cout<<"error escriba correctamente\n";
+			cout<<"su examen final es\n";
+			cin>>ef;
+			getchar();
+		}
+		cout<<"ingrese sus faltas\n";
+		cin>>f;
+		
+		if(f>=10){nf=((p1+p2)/2)*0.4+np*0.2;}
+		else {nf=((p1+p2)/2)*0.4+np*0.2+ef*0.4;}
+		if(nf>=51){cout<<"Aprobo con  "<<nf;}
+		else{cout<<"reprobo con  "<<nf;}
+		puts("");
+		cout<<"continuar con cualquier numero, si se quedo sin alumnos presione 0\n";
+		cin>>x;
+		getchar();
+	}while(x!=0);
+	
+	getchar();
+	getchar();
+}
