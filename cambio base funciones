@@ -1,0 +1,14 @@
+NX a N10
+Aquí base es x
+int cambiodebase(int x , int n)
+int i,re,r;
+i=0;
+r=0;
+while(n>0)
+{re=n%10;
+r=r+(re*powf(x,i);
+i++;
+n=n/10;
+}
+return r;
+}
