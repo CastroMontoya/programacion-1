@@ -1,0 +1,19 @@
+CARGAR FIBONACCI
+
+void main ()
+{	int v[100],n;
+	cout<<"ingrese tamaño del vector :";
+	cin>>n;
+	cargarfibo(v,n);
+	getch();
+}
+void cargar (int v[],int n)
+{
+	int i,a=-1,b=1,fibo;
+	for(i=0;i<n;i++)
+		{fibo=a+b;
+		a=b;
+		b=fibo;
+		v[i]=fibo;
+		}
+}
