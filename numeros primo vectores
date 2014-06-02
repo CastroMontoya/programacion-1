@@ -1,0 +1,20 @@
+Numero primos de un vector
+void main ()
+{	int v[100],n;
+	cout<<"ingrese tamaño del vector :";
+	cin>>n;
+	cargarprimos(v,n);
+	getch();
+}
+void cargar (int v[],int n)
+{
+int i,j,cont1=0,cont2=1;
+	for(i=0;i<n;i++)
+	{
+		for(j=1,j<cont2;j++)
+		{	if(cont2%j==0){cont1++;}
+			if(cont1==2){v[I]=cont2;}
+		}
+	cont2++;
+	}
+}
