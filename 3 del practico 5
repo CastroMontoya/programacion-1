@@ -1,0 +1,39 @@
+// 3 del practico 5.cpp : Defines the entry point for the console application.
+//autor:Carlos Castro
+
+//autor:Carlos Castro
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	int n,x,udm,c,d,u;
+	
+	
+	do{
+			cout<<"ingrese su numero\n";
+			cin>>n;
+			if(n>10000)
+				{
+					cout<<"numero pasa los limites de este programa intente nuevamente\n";
+				}
+			else
+				{	udm=n/1000;
+				c=(n-udm*1000)/100;
+				d=(n-udm*1000-100*c)/10;
+				u=(n-udm*1000-100*c-10*d);
+				cout<<udm<<" udm "<<c<<" c "<<d<<" d "<<u<<" u "<<"\n";
+				
+				}
+	
+				cout<<"presione 0 si quiere salir o 1 para continuar \n";
+				cin>>x;
+				cout<<"\n"<<"\n"<<"\n";
+		}while(x!=0);
+	getchar();
+	getchar();
+}
