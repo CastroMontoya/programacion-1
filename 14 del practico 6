@@ -1,0 +1,34 @@
+ejercicio 14 del practico opcion 2.cpp : Defines the entry point for the console application.
+// hacer un programa que imprema la tabla de sumar octal (1 al 10), en cualquier formato.
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	int i,n,x,s;
+	s=2;
+	n=10;
+	x=10;
+	cout<<"la tabla de sumar ocatal es:\n";
+	for(i=1;i<=n;i++)
+	{
+		
+		if(i>=7){
+					cout<<"la suma es "<<1<<"+"<<i<<"="<<x;
+					puts("");
+					x=x+1;
+				}
+		else {s=1+i;
+		cout<<"la suma es "<<1<<"+"<<i<<"="<<s;
+		puts("");}
+		
+	}
+	getchar();
+	getchar();
+}
