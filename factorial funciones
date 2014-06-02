@@ -1,0 +1,7 @@
+float factorial(int numero) 
+{int i,p;
+p=1;
+for(i=1;i<=numero;i++)
+	{p=p*i;}
+return p;
+}
