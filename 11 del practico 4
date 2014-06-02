@@ -1,0 +1,27 @@
+/ 11 del practico 4 algoritmos.cpp : Defines the entry point for the console application.
+//autor:Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	int a,b,cociente;
+	float residuo;
+	cout<<"ingrese valor de a:\n";
+	cin>>a;
+	cout<<"ingrese valor de b:\n";
+	cin>>b;
+	cociente=a/b;
+	cout<<"el cociente es :"<<cociente;
+	puts("");
+	residuo=a%b;
+	cout<<"el residuo es :"<<residuo;
+	getchar();
+	getchar();
+}
