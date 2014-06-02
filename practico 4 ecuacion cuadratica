@@ -1,0 +1,48 @@
+Enter file contents here/ 1 del practico 4 algoritmos.cpp : Defines the entry point for the console application.
+//c) resolver la ecuacion cuadratica 
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	float a,b,c,x,x1,x2,z;
+	cout<<"ingrese el valor de a:\n";
+	cin>>a;
+	cout<<"ingrese el valor de b:\n";
+	cin>>b;
+	cout<<"ingrese el valor de c:\n";
+	cin>>c;
+	z=(b*b)-4*a*c;
+	if (z>0)
+	{
+		cout<<"x es igual a :\n";
+		x1=(-b+powf(z,0.5))/(2*a);
+		cout<<x1;
+		getchar();
+		cout<<"x es tambien igual a :\n";
+		x2=(-b-powf(z,0.5))/(2*a);
+		cout<<x2;
+		getchar();
+	}
+	else
+	{	if (z==0)
+			{cout<<"x es igual a :\n";
+			 x=(-b/(2*a));
+			 cout<<x
+			 getchar();
+			}
+		else
+		{cout<<"x no existe:\n";
+		}
+		
+	}
+	getchar();
+	getchar();
+	
+}
