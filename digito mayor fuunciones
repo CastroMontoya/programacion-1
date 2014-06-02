@@ -1,0 +1,19 @@
+Digito mayor
+void main ()
+{int n,a;
+cout<<"ingrese n :";
+cin>>n;
+a=digitomayor(n);
+cout<<a;
+}
+int digito mayor(int n)
+{
+int re,may;
+may=n%10;
+while(n>0)
+{re=n%10;
+if(re>may){may=re;}
+n=n/10;
+}
+return (may);
+}
