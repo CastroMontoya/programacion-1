@@ -1,0 +1,27 @@
+// 3 del practico 4 algoritmos.cpp : Defines the entry point for the console application.
+//autor: Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	float d,p,s,v,pi;
+	cout<<"ingrese su diametro:\n";
+	cin>>d;
+	pi=3,14;
+	p=pi*d;
+	cout<<"su perimetro o circunferencia es:\n"<<p;
+	puts("");
+	s=pi*powf(d,2);
+	cout<<"su area es:\n"<<s;
+	puts("");
+	v=(pi*powf(d,3))/6;
+	cout<<"su volumen es :\n"<<v;
+	getchar();
+	getchar();
+}
