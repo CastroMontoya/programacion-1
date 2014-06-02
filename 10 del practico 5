@@ -1,0 +1,48 @@
+// 10 del practico 5.cpp : Defines the entry point for the console application.
+// Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	float tp,tc,h,hq,pf,s,x;
+	
+	tc=0;
+	
+	cout<<"MENU";
+	puts("");
+	cout<<"	1.-hamburguesa 2.-hamburguesa con queso 3.-papa fritas 4.-soda";
+	do{
+		
+		puts("");
+		cout<<"ingrese cantidad de hamburguesas que comio\n";
+		cin>>h;
+		cout<<"ingrese cantidad de hamburguesas con queso que comio\n";
+		cin>>hq;
+		cout<<"ingrese cantidad de papa fritas que comio\n";
+		cin>>pf;
+		cout<<"ingrese cantidad de sodas que tomo\n";
+		cin>>s;
+		
+		cout<<"si quiere terminar escriba 9, si quiere continuar escreiba 1\n";
+		cin>>x;
+		tp=h*3+hq*5+pf*2+s*2.5;
+		tc=tc+tp;
+
+		
+	}while(x!=9);
+	
+	puts("");
+	cout<<"su total de consumo es bs."<<tc;
+	getchar();
+	getchar();
+
+
+	
+}
