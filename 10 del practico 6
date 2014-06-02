@@ -1,0 +1,33 @@
+// 10 del practico 6.cpp : Defines the entry point for the console application.
+// S=x/1! - x^3/3!  + x^5/5! - ... (+/-)  {(x^N)/(N)}!
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	float x,n,s,i,sig;
+	s=0;
+	cout<<"ingrese n: \n";
+	cin>>n;
+	cout<<"ingrese x:\n";
+	cin>>x;
+	sig=1;
+	for(i=1;i<=n*2;i=i+2)
+	{
+		
+			s=s+sig*powf(x,i)/i;
+			puts("");
+			cout<<s;
+			sig=-1*sig;
+	
+		getchar();
+	}
+	cout<<"la suma total es :"<<s;
+	getchar();
+}
