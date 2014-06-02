@@ -1,0 +1,27 @@
+// 13 del practico 4 algoritmos.cpp : Defines the entry point for the console application.
+//autor:Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	int x1,hora,min,seg,h,m;
+	h=3600;
+	m=60;
+	cout<<"ingrese los segundos:\n";
+	cin>>x1;
+	
+	hora=x1/h;
+	min=(x1-h*hora)/m;
+	seg=(x1-h*hora)-m*min;
+	
+	cout<<x1<<"  segundos --> "<<hora<<" hora "<<min<<" minutos "<<seg<<" segundos";
+	getchar();
+	getchar();
+}
