@@ -1,0 +1,28 @@
+// ejercicio 6 del practico.cpp : Defines the entry point for the console application.
+//calcule usando serie HORNER, donde x es # real 
+// s=x+x^2+x^3+...x^N
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	int x,n,i,s;
+	s=0;
+	cout<<"ingrese n:\n";
+	cin>>n;
+	cout<<"digite la base x:\n";
+	cin>>x;
+	for(i=1;i<=n;i++)
+	{
+		s=s+powf(x,i);
+		getchar();
+	}
+	cout<<"la suma de los cuadrados de base "<<x<<" es "<<s;
+	getchar();
+}
