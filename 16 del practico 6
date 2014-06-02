@@ -1,0 +1,31 @@
+// 16 del practico 6.cpp : Defines the entry point for the console application.
+//Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	int n,r;
+	
+	do{
+		cout<<"ingrese N:\n";
+		cin>>n;
+		cout<<"que base:\n";
+		cin>>r;
+		while(n>r)
+		{
+			x=n/r;
+			res=n%r;
+				
+			n=x;
+
+		cout<<"para salir escriba 0\n";
+		cin>>w;
+	}while(w!=0);
+
+}
