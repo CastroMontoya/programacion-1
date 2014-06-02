@@ -1,0 +1,32 @@
+// 2d del practico 4 algoritmos.cpp : Defines the entry point for the console application.
+//autor:Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	int n1,n2,n3,np,ef,nf;
+	cout<<"ingrese su primer parcial:\n";
+	cin>>n1;
+	cout<<"ingrese su segundo parcial:\n";
+	cin>>n2;
+	cout<<"ingrese su tercer parcial:\n";
+	cin>>n3;
+	cout<<"ingrese su nota practica:\n";
+	cin>>np;
+	cout<<"ingrese su examen final:\n";
+	cin>>ef;
+	nf=((n1+n2+n3)/3)*0.4+np*0.2+ef*0.4;
+	puts("");
+	cout<<"su nota final es :\n"<<nf;
+	getchar();
+	getchar();
+
+	
+}
