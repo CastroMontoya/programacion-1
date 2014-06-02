@@ -1,0 +1,51 @@
+// 5 del practico 5.cpp : Defines the entry point for the console application.
+//autor: Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	int d,m,a;
+	
+	
+	cout<<"ingrese la fecha";
+	puts("");
+	puts("");
+	cout<<"ingrese el dia\n";
+	cin>>d;
+	cout<<"ingrese el mes\n";
+	cin>>m;
+	cout<<"ingrese el anio\n";
+	cin>>a;
+	
+	if((m==3&&d>=21)||(m==4)||(m==5)||(m==6&&d<21))
+		{cout<<"es otonio";
+		}
+	else
+		{	if((m==6&&d>=21)||(m==7)||(m==8)||(m==9&&d<21))
+				{cout<<"es invierno";
+				}
+			else
+				{
+					if((m==9&&d>=21)||(m==10)||(m==11)||(m==12&&d<21))
+						{cout<<"es primavera";
+						}
+					else
+						{
+								if((m==12&&d>=21)||(m==1)||(m==2)||(m==3&&d<21))
+									{cout<<"es verano";}
+						}
+				}
+		}
+	getchar();
+	getchar();
+
+
+	
+
+}
