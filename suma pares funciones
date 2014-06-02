@@ -1,0 +1,19 @@
+Suma de pares
+void main ()
+{int n,a;
+cout<<"ingrese n :";
+cin>>n;
+a=sumapares(n);
+cout<<a;
+}
+int sumapares(int n)
+{
+int re,s=0;
+while(n>0)
+{re=n%10;
+if(re%2==0)
+{s=s+re;}
+n=n/10;
+}
+return (s);
+}
