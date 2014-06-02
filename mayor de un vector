@@ -1,0 +1,9 @@
+Numero Mayor en un vector
+May= v[0];
+for(i=0,i<n,i++)
+{
+if(may<v[i]){may=v[i];}
+}
+cout<<may;
+getchar();
+}
