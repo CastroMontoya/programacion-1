@@ -1,0 +1,55 @@
+// 15 del practico 6.cpp : Defines the entry point for the console application.
+//Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	int n,udm,c,d,u,r,b10,w;
+	
+	do{
+		cout<<"ingrese su numero\n";
+		cin>>n;
+		cout<<"ingrese su base r\n";
+		cin>>r;
+		puts("");
+		
+		
+		udm=n/1000;
+		c=(n-udm*1000)/100;
+		d=(n-udm*1000-100*c)/10;
+		u=(n-udm*1000-100*c-10*d);
+		cout<<udm<<" udm "<<c<<" c "<<d<<" d "<<u<<" u ";
+		puts("");
+		puts("");
+		
+		b10=udm*powf(r,3)+c*powf(r,2)+d*powf(r,1)+u*powf(r,0);
+		cout<<"en base 10 sera:";
+		puts("");
+		puts("");
+		cout<<b10<<"="<<udm<<"*"<<powf(r,3)<<"+"<<c<<"*"<<powf(r,2)<<"+"<<d<<"*"<<powf(r,1)<<"+"<<u<<"*"<<powf(r,0);
+		puts("");
+		puts("");
+		cout<<"el numero "<<n<<" en base 10 es "<<b10;
+		puts("");
+		puts("");
+		puts("");
+		puts("");
+		puts("");
+		puts("");
+		cout<<"si quiere salir escriba 0\n:";
+		cin>>w;
+		
+	
+	}while(w!=0);
+	
+		
+	
+		getchar();
+		getchar();
+}
