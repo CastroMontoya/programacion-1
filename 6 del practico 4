@@ -1,0 +1,30 @@
+// 6 del practico 4 algoritmos.cpp : Defines the entry point for the console application.
+//autor:Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	float ht,pph,sb,sn,imp;
+	cout<<"SE LE PAGARA 50 BS POR HORA\n";
+	pph=50;
+	imp=0.13;
+	cout<<"ingrese las horas que trabaja al mes\n";
+	cin>>ht;
+	sb=ht*pph;
+	cout<<"su salario bruto es :\n"<<sb;
+	sn=sb-sb*imp;
+	puts("");
+	cout<<"su salario neto descontandote los impuestos del 13% es: \n"<<sn;
+	getchar();
+	getchar();
+
+
+
+}
