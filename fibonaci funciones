@@ -1,0 +1,19 @@
+FIBONACI
+
+void main ()
+{int n,f;
+cout<<"ingrese n :";
+cin>>n;
+f=fibo(n);
+cout<<f;
+}
+int fibo(int n)
+{int a=-1,b=1,fibo=0,i;
+for(i=0;i<n;i++)
+{fibo=a+b;
+a=b;
+b=fibo;
+s=s+fibo;
+}
+return (s);
+}
