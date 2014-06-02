@@ -1,0 +1,75 @@
+// ejercicio 11 de practico.cpp : Defines the entry point for the console application.
+// encontrar el mcd de 80,60,40
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	int a,b,c,mcd,i,men;
+	mcd=1;
+	i=2;
+	cout<<"ingrese A:\n";
+	cin>>a;
+	cout<<"ingrese B:\n";
+	cin>>b;
+	cout<<"ingrese C:\n";
+	cin>>c;
+	if(a<b)
+	{
+		if(a<c)
+			cout<<"el menor es:"<<a;
+		else
+			cout<<"el menor es:"<<c;
+	}
+	else
+	{
+		if(b<c)
+			{cout<<"el menor es:"<<b;}
+		else
+			{cout<<"el menor es:"<<c;}
+	}
+	getchar();
+	getchar();
+	
+	cout<<"el numero menor entre abc es :\n";
+	cin>>men;
+	getchar();
+	getchar();
+	
+	for(i=2;i<=men;i++)
+	{
+		if((a%i==0)&&(b%i==0)&&(c%i==0))
+		{
+			mcd=mcd*i;
+			cout<<"tu mcd sera:"<<mcd;
+			puts("");
+			a=a/i;
+			cout<<"tu nuevo a es:"<<a;
+			puts("");
+			b=b/i;
+			cout<<"tu nuevo b es:"<<b;
+			puts("");
+			c=c/i;
+			cout<<"tu nuevo c es:"<<c;
+			men=men/i;
+			puts("");
+			cout<<"tu nuevo menor es:"<<men;
+			i=i-1;
+			getchar();
+			getchar();
+		}
+		else
+		{
+			i=i;
+		}
+	}
+	cout<<"el MCD entre ABC sera: "<<mcd;
+	getchar();
+	getchar();
+}
