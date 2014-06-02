@@ -1,0 +1,32 @@
+// 1 del practico 5.cpp : Defines the entry point for the console application.
+//autor:Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	int p;
+	cout<<"ingrese el peso de su carta:\n";
+	cin>>p;
+	if(p<0)
+		{cout<<"error de peso,ingresa nuevamente tu peso";}
+	if((0<p)&&(p<=50))
+		{cout<<"el costo es: 1.5bs";}
+	if((50<p)&&(p<=100))
+		{cout<<"el costo es: 4bs";}
+	if((100<p)&&(p<=200))
+		{cout<<"el costo es: 6bs";}
+	if((200<p)&&(p<=350))
+		{cout<<"el costo es: 10.5bs";}
+	if((350<p)&&(p<=500))
+		{cout<<"el costo es: 15bs";}
+	if(p>500)
+		{cout<<"lo siento, no podras enviar tu carta";}
+	getchar();
+	getchar();
+}
