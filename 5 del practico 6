@@ -1,0 +1,28 @@
+// ejercicio 5 del practico.cpp : Defines the entry point for the console application.
+// calcular el producto de los primeros n numero enteros
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	int p,n,i;
+	p=1;
+	cout<<"ingrese n:\n";
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		cout<<"producto"<<p<<"*"<<i;
+		puts("");
+		p=p*i;
+		puts("");
+		getchar();
+	}
+	cout<<"el producto es:"<<p;
+	getchar();
+}
