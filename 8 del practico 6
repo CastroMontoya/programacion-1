@@ -1,0 +1,27 @@
+// ejercicio 8 del practico.cpp : Defines the entry point for the console application.
+// S=x/1! + x^2/2!  + x^3/3! + ... {(x^N)/(N)}!
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main ()
+{
+	int x,n,s,i;
+	s=0;
+	cout<<"ingrese n: \n";
+	cin>>n;
+	cout<<"ingrese x:\n";
+	cin>>x;
+	for(i=1;i<=n;i++)
+	{
+		s=s+powf(x,i)/i;
+		getchar();
+	}
+	cout<<"la suma total es :"<<s;
+	getchar();
+}
