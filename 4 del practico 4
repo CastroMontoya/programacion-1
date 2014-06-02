@@ -1,0 +1,30 @@
+// 4 del practico 4 algoritmos.cpp : Defines the entry point for the console application.
+//autor: Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	float a,b,s,r,m,d;
+	cout<<"ingrese numero a:\n";
+	cin>>a;
+	cout<<"ingrese numero b:\n";
+	cin>>b;
+	cout<<"OPERACIONES ARITMETICAS\n";
+	s=a+b;
+	r=a-b;
+	m=a*b;
+	d=a/b;
+	cout<<"la suma es: "<<a<<"+"<<b<<"="<<s<<"\n";
+	cout<<"la multiplicacion es: "<<a<<"*"<<b<<"="<<m<<"\n";
+	cout<<"la resta es: "<<a<<"-"<<b<<"="<<r<<"\n";
+	cout<<"la division es: "<<a<<"/"<<b<<"="<<d<<"\n";
+	getchar();
+	getchar();
+
+}
