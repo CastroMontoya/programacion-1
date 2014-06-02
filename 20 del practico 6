@@ -1,0 +1,24 @@
+// 20 del practico 6.cpp : Defines the entry point for the console application.
+//Carlos Castro
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	int h,m,s;
+	cout<<"ingrese la hora\n";
+	cin>>h;
+	cout<<"ingrese los minutos\n";
+	cin>>m;
+	cout<<"ingrese  segundos\n";
+	cin>>s;
+	cout<<h<<" HH "<<m<<" MM "<<s<<" SS ";
+	getchar();
+	getchar();
+
+}e
