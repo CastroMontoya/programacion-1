@@ -1,0 +1,12 @@
+float sumatoria(int x,int n) 
+{int i,p,f;
+float s;
+p=1;
+f=1;
+s=0;
+for(i=1;i<=n;i++)
+	{f=f*i;
+	p=potencia(x,n);
+	s=s+(p/f);
+	}
+return s;
